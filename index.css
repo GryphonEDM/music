@@ -22,6 +22,7 @@ body {
   a:active { text-decoration: none; }
   
   .YTL {
+    margin-top: 3vh;
     color: #FF0000;
   }
   
@@ -50,7 +51,6 @@ body {
     animation: rotation 20s infinite linear;
     background-color: #000;	
     height: 55vh;
-    padding-bottom: 3vh;
     border-radius: 50%;
   }
   
