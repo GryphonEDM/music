@@ -46,19 +46,21 @@ body {
     color: #6441a5;
   }
   
-  @keyframes App-logo-spin {
+  #output {
+    animation: rotation 20s infinite linear;
+    background-color: #000;	
+    height: 55vh;
+    padding-bottom: 3vh;
+    border-radius: 50%;
+  }
+  
+  @keyframes rotation {
     from {
       transform: rotate(0deg);
     }
     to {
-      transform: rotate(360deg);
+      transform: rotate(359deg);
     }
-  }
-  
-  #output {
-      background-color: #000;	
-      height: 55vh;
-      padding-bottom: 3vh;
   }
   
   #images img {
