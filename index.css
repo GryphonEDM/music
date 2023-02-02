@@ -11,7 +11,13 @@ body {
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-  }
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
   
   a:link { text-decoration-line: none; }
   
@@ -22,7 +28,7 @@ body {
   a:active { text-decoration: none; }
   
   .YTL {
-    margin-top: 3vh;
+    margin-top: 3.5rem;
     color: #FF0000;
   }
   
@@ -64,7 +70,11 @@ body {
   }
   
   #images img {
-    max-height: 0;
+    max-height:0;
+  }
+
+  #images {
+    height:0;
   }
 
   #source {
@@ -76,5 +86,5 @@ body {
   }
 
   #welcome {
-
+    margin-bottom: 3rem;
   }
