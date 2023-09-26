@@ -30,33 +30,33 @@ body::-webkit-scrollbar {
   .YTL {
 /*     margin-top: 3.5rem; */
     color: #FF0000;
-    font-size: 2em;
+    font-size: 1.75em;
   }
   
   .SCL {
     color: #F26F23;
-    font-size: 2em;
+    font-size: 1.75em;
   }
   
   .IGL {
     color: #feda75;
-    font-size: 2em;
+    font-size: 1.75em;
   }
   
   .SL {
     color: #1DB954;
-    font-size: 2em;
+    font-size: 1.75em;
   }
   
   
   .FBL {
     color: #4267B2;
-    font-size: 2em;
+    font-size: 1.75em;
   }
   
   .TL {
     color: #6441a5;
-    font-size: 2em;
+    font-size: 1.75em;
   }
   
   #output {
@@ -92,8 +92,8 @@ body::-webkit-scrollbar {
   }
 
   #welcome {
-    font-size: 2em;
-/*     margin-bottom: 3rem; */
+    font-size: 1.5em;
+    margin: 0;
   }
 
   @keyframes wiggle {
