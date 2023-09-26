@@ -28,29 +28,35 @@ body::-webkit-scrollbar {
   a:active { text-decoration: none; }
   
   .YTL {
-    margin-top: 3.5rem;
+/*     margin-top: 3.5rem; */
     color: #FF0000;
+    font-size: 2em;
   }
   
   .SCL {
     color: #F26F23;
+    font-size: 2em;
   }
   
   .IGL {
     color: #feda75;
+    font-size: 2em;
   }
   
   .SL {
     color: #1DB954;
+    font-size: 2em;
   }
   
   
   .FBL {
     color: #4267B2;
+    font-size: 2em;
   }
   
   .TL {
     color: #6441a5;
+    font-size: 2em;
   }
   
   #output {
@@ -86,7 +92,8 @@ body::-webkit-scrollbar {
   }
 
   #welcome {
-    margin-bottom: 3rem;
+    font-size: 2em;
+/*     margin-bottom: 3rem; */
   }
 
   @keyframes wiggle {
