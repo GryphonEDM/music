@@ -32,6 +32,7 @@ body::-webkit-scrollbar {
     max-width: 1850px;
     margin-bottom: 2rem;
     gap: 7rem;
+    flex-wrap: wrap;
 }
 
 /* Left section - Other projects */
@@ -335,6 +336,8 @@ body::-webkit-scrollbar {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 2rem;
+    width: 100%;
+    order: 999;
 }
   
 a:link { text-decoration-line: none; }
