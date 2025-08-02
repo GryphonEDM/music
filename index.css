@@ -423,6 +423,20 @@ a:active { text-decoration: none; }
     align-items: center;
 }
 
+/* Mobile-only header */
+.mobile-only {
+    display: none;
+}
+
+#mobile-header {
+    font-size: 1.3em;
+    margin: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .rainbow-letter {
     display: inline-block;
     animation: rainbow-breathing 3s ease-in-out infinite;
@@ -537,5 +551,10 @@ a:active { text-decoration: none; }
     .cactus-image {
         width: 120px;
         height: 120px;
+    }
+    
+    /* Show mobile-only header */
+    .mobile-only {
+        display: flex !important;
     }
 }
