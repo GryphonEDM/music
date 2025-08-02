@@ -547,18 +547,18 @@ a:active { text-decoration: none; }
         display: block;
     }
     
-    .left-section {
+    .social-links {
         order: 3;
-        text-align: center;
     }
     
-    .right-section {
+    .left-section {
         order: 4;
         text-align: center;
     }
     
-    .social-links {
+    .right-section {
         order: 5;
+        text-align: center;
     }
     
     .cactus-image {
