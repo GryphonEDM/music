@@ -514,8 +514,23 @@ a:active { text-decoration: none; }
         gap: 2rem;
     }
     
-    .left-section,
+    /* Reorder sections for mobile: center first, then left, then right */
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .center-section {
+        order: 1;
+    }
+    
+    .left-section {
+        order: 2;
+        text-align: center;
+    }
+    
     .right-section {
+        order: 3;
         text-align: center;
     }
     
