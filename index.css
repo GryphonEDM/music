@@ -528,7 +528,7 @@ a:active { text-decoration: none; }
         gap: 2rem;
     }
     
-    /* Reorder sections for mobile: center first, then left, then right */
+    /* Reorder sections for mobile: center first, then mobile header, then left, then right */
     .main-content {
         display: flex;
         flex-direction: column;
@@ -539,12 +539,12 @@ a:active { text-decoration: none; }
     }
     
     .left-section {
-        order: 2;
+        order: 3;
         text-align: center;
     }
     
     .right-section {
-        order: 3;
+        order: 4;
         text-align: center;
     }
     
@@ -556,5 +556,7 @@ a:active { text-decoration: none; }
     /* Show mobile-only header */
     .mobile-only {
         display: flex !important;
+        order: 2;
+        margin-bottom: 1rem;
     }
 }
