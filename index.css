@@ -458,7 +458,7 @@ a:active { text-decoration: none; }
     width: 12px;
     height: 12px;
     background: red;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
     animation: rainbow-breathing 3s ease-in-out infinite;
     flex-shrink: 0;
     margin-top: 0.5rem;
