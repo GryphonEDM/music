@@ -5,58 +5,110 @@
         </title>
     </head>
     <body>
-        <p id="welcome">welcome to my site, check out the links below</p>
-        <div id="wrap">
-            <div id="images">
-                <!-- https://imgur.com/a/Vjpq98Q -->
-            <img id="source" src="https://raw.githubusercontent.com/GryphonEDM/music/main/x9JSiTc.png" crossOrigin="anonymous" />
-            <img id="map" src="https://raw.githubusercontent.com/GryphonEDM/music/main/3FTIzUJ.jpg" crossOrigin="anonymous" />
+        <div class="main-content">
+            <!-- Left section - Other projects -->
+            <div class="left-section">
+                <h3 class="projects-header">My other projects:</h3>
+                <ul class="projects-list">
+                    <li class="project-item midi-laser">
+                        <a href="https://www.youtube.com/shorts/-TSlDc9LbBA" target="_blank" rel="noopener noreferrer" class="project-link">My MIDI Laser Instrument Project (a lot more to come from this in the future hopefully)</a>
+                    </li>
+                    <li class="project-item book">My Book: Everything Trichocereus<span class="under-construction">(under construction)</span></li>
+                    <li class="project-item proud">PROUD - LGBTQ community app with e2ee<span class="under-construction">(under construction)</span></li>
+                    <li class="project-item treesradio"><a href="https://treesradio.com" target="_blank" rel="noopener noreferrer" class="project-link">TreesRadio - A social music sharing site I co-created a long time ago</a></li>
+                </ul>
             </div>
-            <canvas id="output" width="1250" height="1250"></canvas>
-          </div>
+
+            <!-- Center section - Main logo -->
+            <div class="center-section">
+                <p id="welcome">welcome to gryphonedm.com</p>
+                <div id="wrap">
+                    <div id="images">
+                        <!-- https://imgur.com/a/Vjpq98Q -->
+                        <img id="source" src="x9JSiTc.png" />
+                        <img id="map" src="3FTIzUJ.jpg" />
+                    </div>
+                    <canvas id="output" width="1250" height="1250"></canvas>
+                </div>
+            </div>
+
+            <!-- Right section - Cactus garden -->
+            <div class="right-section">
+                <div class="cactus-image-wrapper">
+                    <img 
+                        src="assets/cactip.jpg" 
+                        alt="Cactus" 
+                        class="cactus-image"
+                    />
+                </div>
+                <div class="cactus-container">
+                    <h3 class="cactus-header">Cactus Garden</h3>
+                    <ul class="cactus-list">
+                        <li class="cactus-item subreddit">
+                            <a href="https://www.reddit.com/r/sanpedrocactus" target="_blank" rel="noopener noreferrer" class="cactus-link">my sanpedro cactus subreddit:<br>/r/sanpedrocactus</a>
+                        </li>
+                        <li class="cactus-item my-posts">
+                            <a href="https://www.reddit.com/r/sanpedrocactus/search/?q=author%3AGryphonEDM&restrict_sr=1&sort=new" target="_blank" rel="noopener noreferrer" class="cactus-link">my posts in /r/sanpedrocactus</a>
+                        </li>
+                        <li class="cactus-item listings">
+                            my cactus listings <span class="under-construction">(under construction)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social media links -->
+        <div class="social-links">
             <a
-              class="YTL"
-              href="https://youtube.com/@GryphonEDM"
-              target="_blank"
-              rel="noopener noreferrer"
+                class="YTL"
+                href="https://youtube.com/@GryphonEDM"
+                target="_blank"
+                rel="noopener noreferrer"
             >youtube
             </a>
             <a
-              class="SCL"
-              href="https://soundcloud.com/gryphon"
-              target="_blank"
-              rel="noopener noreferrer"
+                class="RDL"
+                href="https://www.reddit.com/user/GryphonEDM/submitted/?sort=top"
+                target="_blank"
+                rel="noopener noreferrer"
+            >reddit
+            </a>
+            <a
+                class="SCL"
+                href="https://soundcloud.com/gryphon"
+                target="_blank"
+                rel="noopener noreferrer"
             >soundcloud
             </a>
             <a
-              class="IGL"
-              href="https://www.instagram.com/gryphonedm/"
-              target="_blank"
-              rel="noopener noreferrer"
+                class="IGL"
+                href="https://www.instagram.com/gryphonedm/"
+                target="_blank"
+                rel="noopener noreferrer"
             >instagram
             </a>
             <a
-              class="SL"
-              href="https://open.spotify.com/artist/28RgT6dVVaK4xYA5L0qeuY"
-              target="_blank"
-              rel="noopener noreferrer"
+                class="SL"
+                href="https://open.spotify.com/artist/28RgT6dVVaK4xYA5L0qeuY"
+                target="_blank"
+                rel="noopener noreferrer"
             >spotify
             </a>
             <a
-              class="FBL"
-              href="https://www.facebook.com/gryphonedm"
-              target="_blank"
-              rel="noopener noreferrer"
+                class="FBL"
+                href="https://www.facebook.com/gryphonedm"
+                target="_blank"
+                rel="noopener noreferrer"
             >facebook
             </a>
             <a
-              class="TL"
-              href="https://www.twitch.tv/gryphonedm"
-              target="_blank"
-              rel="noopener noreferrer"
+                class="TL"
+                href="https://www.twitch.tv/gryphonedm"
+                target="_blank"
+                rel="noopener noreferrer"
             >twitch
             </a>
-          </header>
         </div>
 
         
@@ -160,6 +212,11 @@ function init() {
 // Wait for images to load before starting
 imagesLoaded(images, function() {
     console.log('Images loaded');
+    console.log('Number of images found:', images.length);
+    for (var i = 0; i < images.length; i++) {
+        console.log('Image ' + i + ' src:', images[i].src);
+        console.log('Image ' + i + ' complete:', images[i].complete);
+    }
     init();
 });</script>
     </body>    

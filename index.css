@@ -3,40 +3,278 @@
   }
   
 body {
-    background-color: black;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
 }
 
 body::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
+
+/* Main content layout */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1850px;
+    margin-bottom: 2rem;
+    gap: 7rem;
+}
+
+/* Left section - Other projects */
+.left-section {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.projects-header {
+    margin-bottom: 1.5rem;
+    margin-top: 0.3rem;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 0.3rem;
+}
+
+.projects-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-item {
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0;
+    color: #ccc;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+    border-left: 2px solid transparent;
+    text-indent: 0;
+}
+
+.project-item:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.project-item:nth-child(even) {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.project-item:hover {
+    color: white;
+    border-left-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(3px);
+}
+
+/* Individual project styling */
+.project-item.midi-laser:hover {
+    border-left-color: #FF6B6B;
+}
+
+.project-item.book:hover {
+    border-left-color: #4ECDC4;
+}
+
+.project-item.proud:hover {
+    border-left-color: #FFD93D;
+}
+
+.project-item.treesradio:hover {
+    border-left-color: #6C5CE7;
+}
+
+.under-construction {
+    color: #ff9800;
+    font-size: 0.75em;
+    font-style: italic;
+    margin-left: 0.3rem;
+}
+
+.project-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.project-link:hover {
+    color: white;
+}
+
+/* Center section - Main logo */
+.center-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Right section - Cactus garden */
+.right-section {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+    background: rgba(40, 40, 40, 0.8);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cactus-header {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 0.3rem;
+    text-align: center;
+}
+
+.cactus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cactus-image-wrapper {
+    background-color: #000;
+    border-radius: 12px;
+    padding: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.cactus-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    animation: cactus-rotation 20s infinite alternate ease-in-out;
+    background-color: #000;
+}
+
+@keyframes cactus-rotation {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(720deg); 
+    }
+}
+
+.cactus-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.cactus-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cactus-item {
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0;
+    color: #ccc;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+    border-left: 2px solid transparent;
+    text-indent: 0;
+}
+
+.cactus-item:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.cactus-item:nth-child(even) {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.cactus-item:hover {
+    color: white;
+    border-left-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(3px);
+}
+
+.cactus-item.reddit-posts:hover { border-left-color: #FF6B6B; }
+.cactus-item.subreddit:hover { border-left-color: #4ECDC4; }
+.cactus-item.my-posts:hover { border-left-color: #6C5CE7; }
+.cactus-item.listings:hover { border-left-color: #FFD93D; }
+
+.cactus-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.cactus-link:hover {
+    color: white;
+}
+
+/* Social media links */
+.social-links {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
   
-  a:link { text-decoration-line: none; }
+a:link { text-decoration-line: none; }
   
-  a:visited { text-decoration: none; }
+a:visited { text-decoration: none; }
   
-  a:hover { text-decoration: none; }
+a:hover { text-decoration: none; }
   
-  a:active { text-decoration: none; }
+a:active { text-decoration: none; }
   
-  .YTL {
+.YTL {
 /*     margin-top: 3.5rem; */
-    color: #FF0000;
+    color: #ff0000;
     font-size: 1.75em;
-  }
-  
-  .SCL {
-    color: #F26F23;
+}
+
+.RDL {
+    color: #ff4500;
     font-size: 1.75em;
-  }
+}
+
+.SCL {
+    color: #ff7700;
+    font-size: 1.75em;
+}
   
   .IGL {
     color: #feda75;
@@ -94,7 +332,8 @@ body::-webkit-scrollbar {
   #welcome {
     font-size: 1.5em;
     margin: 0;
-  }
+    margin-bottom: 4rem;
+}
 
   @keyframes wiggle {
     0% {
@@ -132,6 +371,24 @@ body::-webkit-scrollbar {
     }
 }
 
-.YTL, .SCL, .IGL, .SL, .FBL, .TL {
+.YTL, .RDL, .SCL, .IGL, .SL, .FBL, .TL {
   animation: wiggle 10s ease-in-out infinite alternate;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .left-section,
+    .right-section {
+        text-align: center;
+    }
+    
+    .cactus-image {
+        width: 120px;
+        height: 120px;
+    }
 }
