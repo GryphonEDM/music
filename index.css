@@ -449,7 +449,7 @@ a:active { text-decoration: none; }
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     position: relative;
 }
 
@@ -457,14 +457,14 @@ a:active { text-decoration: none; }
 .scroll-indicators {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-    margin-top: 1rem;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 .scroll-indicator {
-    width: 8px;
-    height: 8px;
-    background: red;
+    width: 14px;
+    height: 14px;
+    background: rgba(255, 0, 0, 0.7);
     clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
     animation: indicator-rainbow 3s ease-in-out infinite;
     flex-shrink: 0;
@@ -496,39 +496,39 @@ a:active { text-decoration: none; }
 
 @keyframes indicator-rainbow {
     0%, 100% {
-        background: #ff0000;
+        background: rgba(255, 0, 0, 0.7);
         transform: scale(1);
-        box-shadow: 0 0 5px #ff0000;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
     }
     14.28% {
-        background: #ff4500;
+        background: rgba(255, 69, 0, 0.7);
         transform: scale(1.1);
-        box-shadow: 0 0 10px #ff4500;
+        box-shadow: 0 0 10px rgba(255, 69, 0, 0.7);
     }
     28.57% {
-        background: #ff7700;
+        background: rgba(255, 119, 0, 0.7);
         transform: scale(1.05);
-        box-shadow: 0 0 8px #ff7700;
+        box-shadow: 0 0 8px rgba(255, 119, 0, 0.7);
     }
     42.85% {
-        background: #feda75;
+        background: rgba(254, 218, 117, 0.7);
         transform: scale(1.15);
-        box-shadow: 0 0 12px #feda75;
+        box-shadow: 0 0 12px rgba(254, 218, 117, 0.7);
     }
     57.14% {
-        background: #1DB954;
+        background: rgba(29, 185, 84, 0.7);
         transform: scale(1.08);
-        box-shadow: 0 0 9px #1DB954;
+        box-shadow: 0 0 9px rgba(29, 185, 84, 0.7);
     }
     71.42% {
-        background: #4267B2;
+        background: rgba(66, 103, 178, 0.7);
         transform: scale(1.12);
-        box-shadow: 0 0 11px #4267B2;
+        box-shadow: 0 0 11px rgba(66, 103, 178, 0.7);
     }
     85.71% {
-        background: #6441a5;
+        background: rgba(100, 65, 165, 0.7);
         transform: scale(1.06);
-        box-shadow: 0 0 7px #6441a5;
+        box-shadow: 0 0 7px rgba(100, 65, 165, 0.7);
     }
 }
 
