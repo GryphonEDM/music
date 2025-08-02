@@ -459,7 +459,7 @@ a:active { text-decoration: none; }
     height: 12px;
     background: red;
     clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
-    animation: rainbow-breathing 3s ease-in-out infinite;
+    animation: indicator-rainbow 3s ease-in-out infinite;
     flex-shrink: 0;
     margin-top: 0.5rem;
 }
@@ -470,6 +470,44 @@ a:active { text-decoration: none; }
 
 .scroll-indicator.right {
     animation-delay: 1.5s;
+}
+
+@keyframes indicator-rainbow {
+    0%, 100% {
+        background: #ff0000;
+        transform: scale(1);
+        box-shadow: 0 0 5px #ff0000;
+    }
+    14.28% {
+        background: #ff4500;
+        transform: scale(1.1);
+        box-shadow: 0 0 10px #ff4500;
+    }
+    28.57% {
+        background: #ff7700;
+        transform: scale(1.05);
+        box-shadow: 0 0 8px #ff7700;
+    }
+    42.85% {
+        background: #feda75;
+        transform: scale(1.15);
+        box-shadow: 0 0 12px #feda75;
+    }
+    57.14% {
+        background: #1DB954;
+        transform: scale(1.08);
+        box-shadow: 0 0 9px #1DB954;
+    }
+    71.42% {
+        background: #4267B2;
+        transform: scale(1.12);
+        box-shadow: 0 0 11px #4267B2;
+    }
+    85.71% {
+        background: #6441a5;
+        transform: scale(1.06);
+        box-shadow: 0 0 7px #6441a5;
+    }
 }
 
 @keyframes scroll-bounce {
