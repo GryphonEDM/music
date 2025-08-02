@@ -49,7 +49,7 @@ body::-webkit-scrollbar {
 
 .projects-header {
     margin-bottom: 1.5rem;
-    margin-top: 0.3rem;
+    margin-top: 0.1rem;
     color: white;
     font-size: 1.2em;
     font-weight: 500;
@@ -65,8 +65,8 @@ body::-webkit-scrollbar {
 }
 
 .project-item {
-    margin-bottom: 0.5rem;
-    padding: 0.3rem 0;
+    margin-bottom: 0.7rem;
+    padding: 0.4rem 0.2rem;
     color: #ccc;
     font-size: 0.9em;
     transition: all 0.2s ease;
@@ -87,6 +87,8 @@ body::-webkit-scrollbar {
     border-left-color: rgba(255, 255, 255, 0.5);
     transform: translateX(3px);
 }
+
+
 
 /* Individual project styling */
 .project-item.midi-laser:hover {
@@ -189,6 +191,10 @@ body::-webkit-scrollbar {
     text-decoration: none;
     transition: color 0.2s ease;
     font-size: 0.9em;
+    display: block;
+    width: 100%;
+    padding: 0.4rem 0.2rem;
+    margin: -0.4rem -0.2rem;
 }
 
 .project-link:hover {
@@ -219,6 +225,7 @@ body::-webkit-scrollbar {
 
 .cactus-header {
     margin-bottom: 1rem;
+    margin-top: 0.1rem;
     color: white;
     font-size: 1.2em;
     font-weight: 500;
@@ -278,8 +285,8 @@ body::-webkit-scrollbar {
 }
 
 .cactus-item {
-    margin-bottom: 0.5rem;
-    padding: 0.3rem 0;
+    margin-bottom: 0.7rem;
+    padding: 0.4rem 0.2rem;
     color: #ccc;
     font-size: 0.9em;
     transition: all 0.2s ease;
@@ -311,6 +318,10 @@ body::-webkit-scrollbar {
     text-decoration: none;
     transition: color 0.2s ease;
     font-size: 0.9em;
+    display: block;
+    width: 100%;
+    padding: 0.4rem 0.2rem;
+    margin: -0.4rem -0.2rem;
 }
 
 .cactus-link:hover {
