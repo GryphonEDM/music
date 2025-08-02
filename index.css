@@ -454,22 +454,44 @@ a:active { text-decoration: none; }
 }
 
 /* Mobile scroll indicators */
+.scroll-indicators {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+
 .scroll-indicator {
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background: red;
     clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
     animation: indicator-rainbow 3s ease-in-out infinite;
     flex-shrink: 0;
-    margin-top: 0.5rem;
 }
 
-.scroll-indicator.left {
+.scroll-indicators.left .scroll-indicator:nth-child(1) {
     animation-delay: 0s;
 }
 
-.scroll-indicator.right {
+.scroll-indicators.left .scroll-indicator:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.scroll-indicators.left .scroll-indicator:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.scroll-indicators.right .scroll-indicator:nth-child(1) {
     animation-delay: 1.5s;
+}
+
+.scroll-indicators.right .scroll-indicator:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.scroll-indicators.right .scroll-indicator:nth-child(3) {
+    animation-delay: 2.5s;
 }
 
 @keyframes indicator-rainbow {
