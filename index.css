@@ -557,6 +557,10 @@ a:active { text-decoration: none; }
         text-align: center;
     }
     
+    .social-links {
+        order: 5;
+    }
+    
     .cactus-image {
         width: 120px;
         height: 120px;
