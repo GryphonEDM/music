@@ -333,6 +333,53 @@ a:active { text-decoration: none; }
     font-size: 1.5em;
     margin: 0;
     margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rainbow-letter {
+    display: inline-block;
+    animation: rainbow-breathing 3s ease-in-out infinite;
+    animation-delay: calc(var(--index) * 0.1s);
+}
+
+@keyframes rainbow-breathing {
+    0%, 100% {
+        color: #ff0000;
+        transform: scale(1);
+        text-shadow: 0 0 5px currentColor;
+    }
+    14.28% {
+        color: #ff4500;
+        transform: scale(1.1);
+        text-shadow: 0 0 10px currentColor;
+    }
+    28.57% {
+        color: #ff7700;
+        transform: scale(1.05);
+        text-shadow: 0 0 8px currentColor;
+    }
+    42.85% {
+        color: #feda75;
+        transform: scale(1.15);
+        text-shadow: 0 0 12px currentColor;
+    }
+    57.14% {
+        color: #1DB954;
+        transform: scale(1.08);
+        text-shadow: 0 0 9px currentColor;
+    }
+    71.42% {
+        color: #4267B2;
+        transform: scale(1.12);
+        text-shadow: 0 0 11px currentColor;
+    }
+    85.71% {
+        color: #6441a5;
+        transform: scale(1.06);
+        text-shadow: 0 0 7px currentColor;
+    }
 }
 
   @keyframes wiggle {

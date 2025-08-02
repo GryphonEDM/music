@@ -21,7 +21,33 @@
 
             <!-- Center section - Main logo -->
             <div class="center-section">
-                <p id="welcome">welcome to gryphonedm.com</p>
+                <p id="welcome">
+                    <span class="rainbow-letter" data-index="0">w</span>
+                    <span class="rainbow-letter" data-index="1">e</span>
+                    <span class="rainbow-letter" data-index="2">l</span>
+                    <span class="rainbow-letter" data-index="3">c</span>
+                    <span class="rainbow-letter" data-index="4">o</span>
+                    <span class="rainbow-letter" data-index="5">m</span>
+                    <span class="rainbow-letter" data-index="6">e</span>
+                    <span class="rainbow-letter" data-index="7">&nbsp;</span>
+                    <span class="rainbow-letter" data-index="8">t</span>
+                    <span class="rainbow-letter" data-index="9">o</span>
+                    <span class="rainbow-letter" data-index="10">&nbsp;</span>
+                    <span class="rainbow-letter" data-index="11">g</span>
+                    <span class="rainbow-letter" data-index="12">r</span>
+                    <span class="rainbow-letter" data-index="13">y</span>
+                    <span class="rainbow-letter" data-index="14">p</span>
+                    <span class="rainbow-letter" data-index="15">h</span>
+                    <span class="rainbow-letter" data-index="16">o</span>
+                    <span class="rainbow-letter" data-index="17">n</span>
+                    <span class="rainbow-letter" data-index="18">e</span>
+                    <span class="rainbow-letter" data-index="19">d</span>
+                    <span class="rainbow-letter" data-index="20">m</span>
+                    <span class="rainbow-letter" data-index="21">.</span>
+                    <span class="rainbow-letter" data-index="22">c</span>
+                    <span class="rainbow-letter" data-index="23">o</span>
+                    <span class="rainbow-letter" data-index="24">m</span>
+                </p>
                 <div id="wrap">
                     <div id="images">
                         <!-- https://imgur.com/a/Vjpq98Q -->
@@ -45,13 +71,13 @@
                     <h3 class="cactus-header">Cactus Garden</h3>
                     <ul class="cactus-list">
                         <li class="cactus-item subreddit">
-                            <a href="https://www.reddit.com/r/sanpedrocactus" target="_blank" rel="noopener noreferrer" class="cactus-link">my sanpedro cactus subreddit:<br>/r/sanpedrocactus</a>
+                            <a href="https://www.reddit.com/r/sanpedrocactus" target="_blank" rel="noopener noreferrer" class="cactus-link">my san pedro cactus subreddit:<br>/r/sanpedrocactus</a>
                         </li>
                         <li class="cactus-item my-posts">
                             <a href="https://www.reddit.com/r/sanpedrocactus/search/?q=author%3AGryphonEDM&restrict_sr=1&sort=new" target="_blank" rel="noopener noreferrer" class="cactus-link">my posts in /r/sanpedrocactus</a>
                         </li>
                         <li class="cactus-item listings">
-                            my cactus listings <span class="under-construction">(under construction)</span>
+                            <a href="https://www.reddit.com/r/sanpedrocactusforsale/search/?q=author%3AGryphonEDM&restrict_sr=1&sort=new" target="_blank" rel="noopener noreferrer" class="cactus-link">my cactus listings in /r/sanpedrocactusforsale (sorted by newest)</a>
                         </li>
                     </ul>
                 </div>
@@ -111,6 +137,16 @@
             </a>
         </div>
 
+        <script>
+            // Set animation delays for rainbow letters
+            document.addEventListener('DOMContentLoaded', function() {
+                const letters = document.querySelectorAll('.rainbow-letter');
+                letters.forEach(letter => {
+                    const index = parseInt(letter.getAttribute('data-index'));
+                    letter.style.setProperty('--index', index);
+                });
+            });
+        </script>
         
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 <script>// Maximum distance for xy displacement offset
