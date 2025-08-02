@@ -428,6 +428,10 @@ a:active { text-decoration: none; }
     display: none;
 }
 
+.mobile-header-section {
+    display: none;
+}
+
 #mobile-header {
     font-size: 1.3em;
     margin: 0;
@@ -538,6 +542,11 @@ a:active { text-decoration: none; }
         order: 1;
     }
     
+    .mobile-header-section {
+        order: 2;
+        display: block;
+    }
+    
     .left-section {
         order: 3;
         text-align: center;
@@ -556,7 +565,6 @@ a:active { text-decoration: none; }
     /* Show mobile-only header */
     .mobile-only {
         display: flex !important;
-        order: 2;
         margin-bottom: 1rem;
     }
 }
