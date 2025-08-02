@@ -68,7 +68,7 @@ body::-webkit-scrollbar {
     margin-bottom: 0.7rem;
     padding: 0.4rem 0.2rem;
     color: #ccc;
-    font-size: 0.9em;
+    font-size: 1.0em;
     transition: all 0.2s ease;
     border-left: 2px solid transparent;
     text-indent: 0;
@@ -190,7 +190,7 @@ body::-webkit-scrollbar {
     color: #e0e0e0;
     text-decoration: none;
     transition: color 0.2s ease;
-    font-size: 0.9em;
+    font-size: 1.0em;
     display: block;
     width: 100%;
     padding: 0.4rem 0.2rem;
@@ -288,7 +288,7 @@ body::-webkit-scrollbar {
     margin-bottom: 0.7rem;
     padding: 0.4rem 0.2rem;
     color: #ccc;
-    font-size: 0.9em;
+    font-size: 1.0em;
     transition: all 0.2s ease;
     border-left: 2px solid transparent;
     text-indent: 0;
@@ -317,7 +317,7 @@ body::-webkit-scrollbar {
     color: #e0e0e0;
     text-decoration: none;
     transition: color 0.2s ease;
-    font-size: 0.9em;
+    font-size: 1.0em;
     display: block;
     width: 100%;
     padding: 0.4rem 0.2rem;
