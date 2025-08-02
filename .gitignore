@@ -1,5 +1,5 @@
-# Build artifacts
-dist/
+# Build artifacts (but allow dist/ for GitHub Pages)
+# dist/
 
 # Node modules (if you install dependencies)
 node_modules/
