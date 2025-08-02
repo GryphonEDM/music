@@ -188,6 +188,7 @@ body::-webkit-scrollbar {
     color: #e0e0e0;
     text-decoration: none;
     transition: color 0.2s ease;
+    font-size: 0.9em;
 }
 
 .project-link:hover {
@@ -309,6 +310,7 @@ body::-webkit-scrollbar {
     color: #e0e0e0;
     text-decoration: none;
     transition: color 0.2s ease;
+    font-size: 0.9em;
 }
 
 .cactus-link:hover {
