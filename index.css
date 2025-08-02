@@ -336,7 +336,7 @@ body::-webkit-scrollbar {
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     width: 100%;
     order: 999;
 }
