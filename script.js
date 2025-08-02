@@ -105,11 +105,48 @@ imagesLoaded(images, function() {
     init();
 });
 
-// Set animation delays for rainbow letters
+// Mobile detection function
+function isMobileDevice() {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+    // Check for mobile devices
+    const mobileRegex = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i;
+    const isMobile = mobileRegex.test(userAgent.toLowerCase());
+    
+    // Additional check for screen size
+    const isSmallScreen = window.innerWidth <= 768;
+    
+    return isMobile || isSmallScreen;
+}
+
+// Function to show/hide mobile UI elements
+function toggleMobileUI() {
+    const mobileElements = document.querySelectorAll('.mobile-only, .mobile-header-section');
+    const isMobile = isMobileDevice();
+    
+    mobileElements.forEach(element => {
+        if (isMobile) {
+            element.style.display = element.classList.contains('mobile-header-section') ? 'block' : 'flex';
+        } else {
+            element.style.display = 'none';
+        }
+    });
+    
+    console.log('Mobile device detected:', isMobile);
+    console.log('Mobile UI elements:', mobileElements.length);
+}
+
+// Set animation delays for rainbow letters and handle mobile UI
 document.addEventListener('DOMContentLoaded', function() {
     const letters = document.querySelectorAll('.rainbow-letter');
     letters.forEach(letter => {
         const index = parseInt(letter.getAttribute('data-index'));
         letter.style.setProperty('--index', index);
     });
+    
+    // Initialize mobile UI
+    toggleMobileUI();
+    
+    // Handle window resize
+    window.addEventListener('resize', toggleMobileUI);
 }); 
