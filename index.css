@@ -449,16 +449,20 @@ a:active { text-decoration: none; }
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     position: relative;
 }
 
 /* Mobile scroll indicators */
 .scroll-indicator {
-    font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.7);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid rgba(255, 255, 255, 0.7);
     animation: scroll-bounce 2s ease-in-out infinite;
     flex-shrink: 0;
+    margin-top: 0.5rem;
 }
 
 @keyframes scroll-bounce {
