@@ -438,7 +438,7 @@ a:active { text-decoration: none; }
 #mobile-header {
     font-size: 1.3em;
     margin: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
