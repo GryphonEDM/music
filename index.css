@@ -209,6 +209,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* Right section - Cactus garden */
@@ -438,10 +439,47 @@ a:active { text-decoration: none; }
 #mobile-header {
     font-size: 1.3em;
     margin: 0;
-    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Mobile scroll indicators */
+.scroll-indicators {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 10;
+}
+
+.scroll-indicator {
+    position: absolute;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+    animation: scroll-bounce 2s ease-in-out infinite;
+}
+
+.scroll-indicator.left {
+    left: 1rem;
+}
+
+.scroll-indicator.right {
+    right: 1rem;
+}
+
+@keyframes scroll-bounce {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.7;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
 }
 
 .rainbow-letter {
@@ -573,5 +611,10 @@ a:active { text-decoration: none; }
     .mobile-only {
         display: flex !important;
         margin-bottom: 1rem;
+    }
+    
+    /* Show scroll indicators */
+    .scroll-indicators {
+        display: block !important;
     }
 }
